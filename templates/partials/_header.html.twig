@@ -9,11 +9,17 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Contact</h4>
                     <ul class="list-unstyled">
+                        <li><a href="{{ path('app_tuto_js') }}" class="text-white">Tuto Js</a></li>
+                        <li><a href="{{ path('app_post_index') }}" class="text-white">Posts</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
                         {% if app.user %}
                          <li><a href="{{ path('app_logout') }}" class="text-white">Logout</a></li>
                         {% else %}
                         <li><a href="{{ path('app_register') }}" class="text-white">FRegister</a></li>
                         <li><a href="{{ path('app_login') }}" class="text-white">Login</a></li>
+                        <li><a href="{{ path('app_tuto_js') }}" class="text-white">Tuto Js</a></li>
+                        <li><a href="{{ path('app_post_index') }}" class="text-white">Posts</a></li>
                         {% endif %}
                     </ul>
                 </div>

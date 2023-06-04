@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+<div class="container text-center">
+    <h1>Apprendre le javaScript</h1>
+</div>
+{% endblock %}
+
+ {% block javascripts %}
+    {{ parent() }}
+     <script src="{{ asset('js/tuto_js_2023.js') }}"></script>
+ {% endblock %}
